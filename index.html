@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<!------------------------projects------------------>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="IMAGES/logo1.jpeg" class="logo1">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume-section">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <!-- Text Section Above the Image -->
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h2>Hi, I'm <span>Suvarna</span><br>From India</h2>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+  <!------------about-------------->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="IMAGES\suvpic.jpeg"> 
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>"Hi! I'm Suvarna, an aspiring frontend developer with a strong foundation in technology. I have experience working with C, Python, Java and SQL along with a deep passion for frontend development. I enjoy building responsive and interactive web applications using HTML, CSS, and JavaScript. My goal is to create user-friendly and visually appealing websites while continuously learning and improving my skills in both frontend and backend technologies."</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills', event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                    <p class="tab-links" onclick="opentab('Volunteering', event)">Volunteering</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>C-language</span><br>Problem solving</li>
+                        <li><span>Python</span><br>Basics</li>
+                        <li><span>JAVA-language</span><br>Data Structures and Algorithms</li>
+                        <li><span>Frontend Technologies</span><br>HTML, CSS
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>SSC</span><br>ZPHS(B) MARIKAL</li>
+                        <li><span>Intermediate</span><br>SR-SG Junior College</li>
+                        <li><span>B.Tech</span><br>BVRIT Hyderabad College of Engineering for Women.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="Volunteering">
+                    <ul>
+                        <li><span>BETI BACHAVO-BETI PADAVO</span><br>Children's Celebrations at Ravindra Bharathi</li>
+                        <li><span>PULSE POLIO DROPS</span><br>Govt Hospital</li>
+                        <li><span>MSS EXAM Invigilation</span><br>Assisting with Examinations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+                
+ 
+                <style>
+                    .tab-contents {
+                        display: none;
+                    }
+                    .active-tab {
+                        display: block;
+                    }
+                </style>
+<!-----------------------Certifications---------------->
+<div id="Certifications">
+    <div class="container">
+    <h1 class="subtitle">My Certifications</h1>
+    <div class="Certifications-list">
+        <div class="Certifications-item">
+            <i class="fa-solid fa-star"></i>
+            <h2>NPTEL CERTIFICATIONS</h2>
+            <p>I have completed NPTEL certifications in Problem Solving through C and Programming in Java</p>
+        </div>
+        <div class="Certifications-item">
+            <i class="fa-solid fa-star"></i>
+            <h2>Certification DEMUX Hackathon-2024</h2>
+            <p>I participated in the 24-hour Hackathon 2024 at BVRIT on the 5th and 6th of September 2024</p>
+        </div>
+        <div class="Certifications-item">
+            <i class="fa-solid fa-star"></i>
+            <h2>Certification PIVOT Hackthon-2024</h2>
+            <p>I participated in a 24-hour Hackathon at BVRIT Hyderabad and secured a place in the top 5 ideas</p>
+        </div>
+    </div>
+    </div>
+</div>
+<!------------------------projects------------------>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        
+        <div class="projects-list">
+            <div class="project-item">
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>PS-4 Interactive App for Eco-Friendly Lifestyle</h2>
+                <p>A mobile application designed to encourage sustainable living by offering personalized tips and resources for reducing environmental impact. 
+                   The app provides insights on energy conservation, waste reduction, and eco-conscious product choices. Users can track progress, set sustainability goals, 
+                   earn rewards, and engage with a community promoting green habits.</p>
+                <p><strong>Role:</strong> Team Member</p>
+                <p><strong>Technologies Used:</strong> Mobile App Development, UI/UX Design</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="project-item">
+                <i class="fa-solid fa-comment-sms"></i>
+                <h2>SMS Classifier</h2>
+                <p>A machine learning-based text classifier that detects spam SMS messages using <strong>TF-IDF</strong> (Term Frequency-Inverse Document Frequency) for text analysis 
+                   and a <strong>Multinomial Naive Bayes classifier</strong> for classification. The project achieves high accuracy in distinguishing spam from non-spam messages, making SMS filtering more efficient.</p>
+                <p><strong>Role:</strong> Team Lead</p>
+                <p><strong>Technologies Used:</strong> Python, Machine Learning, TF-IDF, Multinomial Naive Bayes</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------resume---------->
+<div id="resume-section">
+    <div class="container">
+        <h1 class="subtitle"><i class="fa-solid fa-file"></i> My Resume</h1>
+
+        <div class="resume-card">
+            <i class="fa-solid fa-file-pdf pdf-icon"></i>
+            <h2>Download My Resume</h2>
+            <p>Click the button below to download my resume and explore my skills, education, and experience.</p>
+            
+            <!-- Ensure file name does not contain spaces -->
+            <a href="IMAGES\resume_M Suvarna.pdf" download="resume_M_Suvarna.pdf">
+                <button class="download-btn">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--------------------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>suvarnamaddi654@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>6305444083</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/suvarna-m-494a132b1/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Suvarnamaddi"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/@MaddiSuvarna-eg9wc"><i class="fab fa-youtube"></i></a>
+                   </div>
+                </div>
+                <div class="contact-right">
+                         <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message"  rows="6" placeholder="Your Mesaage"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                         </form>
+                         <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">Copyright &copy; 2025 Suvarna M. All Rights Reserved.</p>
+
+</div>
+
+
+                <script>
+                    var tablinks = document.getElementsByClassName("tab-links");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                    function opentab(tabname, event) {
+                        for (var tablink of tablinks) {
+                            tablink.classList.remove("active-link");
+                        }
+                        for (var tabcontent of tabcontents) {
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+                
+                    document.getElementById("Skills").classList.add("active-tab");
+
+ </script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0"; 
+}
+
+function closemenu() {
+    sidemenu.style.right = "-200px"; 
+}
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxcLnyBPVhTjJGlfWzQHIrhDTHaUuNnFs9ULFR3T3m1Fn6kn_GRgieBl1qVLGurySC_/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+                
+</body>
+</html>
